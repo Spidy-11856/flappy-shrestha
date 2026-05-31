@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Flappy Shrestha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Flappy Shrestha game">
+      <canvas id="game" width="900" height="640"></canvas>
+
+      <section class="hud top-bar" aria-live="polite">
+        <div>
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <h1>Flappy Shrestha</h1>
+        <div>
+          <span class="label">Best</span>
+          <strong id="best">0</strong>
+        </div>
+      </section>
+
+      <button id="pause" class="icon-button pause-button" type="button" aria-label="Pause game">II</button>
+
+      <section id="panel" class="panel start-panel">
+        <h2 id="panel-title">Flappy Shrestha</h2>
+        <p id="panel-text">Press Start, then use Jump to flap through the gaps.</p>
+        <button id="start" type="button">Start Game</button>
+      </section>
+
+      <button id="jump" class="jump-button" type="button" aria-label="Jump">Jump</button>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
